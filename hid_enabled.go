@@ -24,8 +24,7 @@ specifically for the linux platform, below.
 #cgo linux CFLAGS: -I./libusb/libusb -DOS_LINUX -D_GNU_SOURCE -DHAVE_SYS_TIME_H -DHAVE_CLOCK_GETTIME
 #cgo linux,!android LDFLAGS: -lrt
 
-#cgo darwin CFLAGS: -DOS_DARWIN -DHAVE_SYS_TIME_H
-#cgo darwin LDFLAGS: -framework CoreFoundation -framework IOKit -lobjc
+#cgo darwin pkg-config: hidapi
 
 #cgo windows CFLAGS: -DOS_WINDOWS
 #cgo windows LDFLAGS: -lsetupapi
@@ -59,8 +58,10 @@ specifically for the linux platform, below.
 
    #include "hidapi/libusb/hid.c"
 
-#elif OS_DARWIN
-	#include "hidapi/mac/hid.c"
+#elif defined(__APPLE__)
+	#include <stdlib.h>
+	#include <wchar.h>
+	#include "hidapi/hidapi/hidapi.h"
 #elif OS_WINDOWS
 	#include "hidapi/windows/hid.c"
 #elif OS_FREEBSD
