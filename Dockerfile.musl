@@ -6,7 +6,7 @@ FROM golang:alpine
 
 RUN apk add --no-cache gcc musl-dev linux-headers
 
-ADD . $GOPATH/src/github.com/karalabe/hid
-RUN cd $GOPATH/src/github.com/karalabe/hid && go build demo.go && mv demo /demo
+ADD . $GOPATH/src/github.com/mavryk-network/hid
+RUN cd $GOPATH/src/github.com/mavryk-network/hid && go build demo.go && mv demo /demo
 
 ENTRYPOINT ["/demo"]

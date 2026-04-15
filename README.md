@@ -1,17 +1,17 @@
 [![AppVeyor][appveyorimg]][appveyorurl]
 [![GoDoc][docimg]][docurl]
 
-[travisimg]:   https://travis-ci.org/karalabe/hid.svg?branch=master
-[travisurl]:   https://travis-ci.org/karalabe/hid
+[travisimg]:   https://travis-ci.org/mavryk-network/hid.svg?branch=master
+[travisurl]:   https://travis-ci.org/mavryk-network/hid
 [appveyorimg]: https://ci.appveyor.com/api/projects/status/7cm4ko18etdvkb7f?svg=true
-[appveyorurl]: https://ci.appveyor.com/project/karalabe/hid
-[docimg]:      https://godoc.org/github.com/karalabe/hid?status.svg
-[docurl]:      https://godoc.org/github.com/karalabe/hid
+[appveyorurl]: https://ci.appveyor.com/project/mavryk-network/hid
+[docimg]:      https://godoc.org/github.com/mavryk-network/hid?status.svg
+[docurl]:      https://godoc.org/github.com/mavryk-network/hid
 
 # Gopher Interface Devices (USB HID)
 
 The `hid` package is a cross platform library for accessing and communicating with USB Human Interface
-Devices (HID). It is an alternative package to [`gousb`](https://github.com/karalabe/gousb) for use
+Devices (HID). It is an alternative package to [`gousb`](https://github.com/mavryk-network/gousb) for use
 cases where devices support this ligher mode of operation (e.g. input devices, hardware crypto wallets).
 
 The package wraps [`hidapi`](https://github.com/libusb/hidapi) for accessing OS specific USB HID APIs

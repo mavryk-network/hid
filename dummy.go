@@ -15,16 +15,16 @@
 package main
 
 import (
-	_ "github.com/karalabe/hid/hidapi"
-	_ "github.com/karalabe/hid/hidapi/hidapi"
-	_ "github.com/karalabe/hid/hidapi/hidtest"
-	_ "github.com/karalabe/hid/hidapi/libusb"
-	_ "github.com/karalabe/hid/hidapi/linux"
-	_ "github.com/karalabe/hid/hidapi/mac"
-	_ "github.com/karalabe/hid/hidapi/netbsd"
-	_ "github.com/karalabe/hid/hidapi/pc"
-	_ "github.com/karalabe/hid/hidapi/windows"
-	_ "github.com/karalabe/hid/libusb"
-	_ "github.com/karalabe/hid/libusb/libusb"
-	_ "github.com/karalabe/hid/libusb/libusb/os"
+	_ "github.com/mavryk-network/hid/hidapi"
+	_ "github.com/mavryk-network/hid/hidapi/hidapi"
+	_ "github.com/mavryk-network/hid/hidapi/hidtest"
+	_ "github.com/mavryk-network/hid/hidapi/libusb"
+	_ "github.com/mavryk-network/hid/hidapi/linux"
+	_ "github.com/mavryk-network/hid/hidapi/mac"
+	_ "github.com/mavryk-network/hid/hidapi/netbsd"
+	_ "github.com/mavryk-network/hid/hidapi/pc"
+	_ "github.com/mavryk-network/hid/hidapi/windows"
+	_ "github.com/mavryk-network/hid/libusb"
+	_ "github.com/mavryk-network/hid/libusb/libusb"
+	_ "github.com/mavryk-network/hid/libusb/libusb/os"
 )
